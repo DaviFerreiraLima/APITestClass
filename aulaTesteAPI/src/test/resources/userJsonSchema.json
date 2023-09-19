@@ -1,0 +1,61 @@
+{
+    "type": "array",
+    "default": [],
+    "items": {
+        "type": "object",
+        "required": [
+            "id",
+            "name",
+            "age"
+        ],
+        "properties": {
+            "id": {
+                "type": "integer"
+            },
+            "name": {
+                "type": "string"
+            },
+            "age": {
+                "type": "integer"
+            },
+            "salary": {
+                "type": [
+                    "number"
+                ]
+            },
+            "endereco": {
+                "type": "object",
+                "default": {},
+                "required": [
+                    "rua",
+                    "numero"
+                ],
+                "properties": {
+                    "rua": {
+                        "type": "string",
+                        "default": ""
+                    },
+                    "numero": {
+                        "type": "integer",
+                        "default": 0
+                    }
+                }
+            },
+            "filhos": {
+                "type": "array",
+                "default": [],
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "name"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
